@@ -1,5 +1,5 @@
 #header {
-width: 120%;
+width: 110%;
 background: #fff;
 height: 50px;
   position: fixed; 
@@ -47,7 +47,7 @@ body{
 }
 
 section {
-  width: 120%;
+  width: 105%;
   padding: 0 7%;
   display: table;
   margin: 0;
