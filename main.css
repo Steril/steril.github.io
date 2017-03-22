@@ -1,5 +1,5 @@
 #header {
-width: 100%;
+width: 120%;
 background: #fff;
 height: 50px;
   position: fixed; 
@@ -47,7 +47,7 @@ body{
 }
 
 section {
-  width: 100%;
+  width: 120%;
   padding: 0 7%;
   display: table;
   margin: 0;
@@ -113,7 +113,7 @@ margin: 0 auto;
 overflow: hidden;
  padding: 10%;
   max-height: 90vh;
-  width: 100%;
+  width: 120%;
 
 }
 
