@@ -55,7 +55,6 @@ section {
   margin: 0;
   max-width: none;
   height: 90vh;
-  border-bottom: 2px solid black;
 }
 
 .img-round {
@@ -111,11 +110,11 @@ background-size: cover;
 
 #slide2{
 // background-color: black;
-  background-color: #404040;
+  background-color: #202020;
 color: white;
 margin: 0 auto;
 overflow: hidden;
-  width: 100%;
+  width: 100vw;
   padding: 30vh 0 30vh 0 ;
  // padding: 30vh;
   max-height: 90vh;
