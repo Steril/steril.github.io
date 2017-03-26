@@ -133,7 +133,7 @@ height: 95vh;
 }
 
 .portfolio img {
-  width: 100%;
+  width: 20vw;
 }
 
 #imagesMain{
@@ -172,7 +172,7 @@ height: 95vh;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto; 
-  width: 30vh;
+  width: 20vw;
 }
 
 
