@@ -10,6 +10,7 @@ background: #fff;
     height: 4rem;
   position: fixed; 
 mix-blend-mode: difference; 
+     z-index: 100;
 }
 #nav { 
   width: 100%; 
