@@ -23,64 +23,79 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #ffffff;
-    font-weight: bold;
 }
 
 .hero {
-    background-image: url('assets/images/hero-image.jpg');
+    background-image: url('https://visitncsmokies.com/wp-content/uploads/2018/09/HERO-PLACEHOLDER.jpg');
     background-size: cover;
-    height: 100vh;
+    background-position: center;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
     text-align: center;
+    padding: 0 20px;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    color: #fff;
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    color: #fff;
-    margin-bottom: 30px;
+    font-size: 24px;
+    margin-bottom: 40px;
 }
 
 .cta {
-    background-color: #9cb7c3;
+    display: inline-block;
+    background-color: #6d8ca6;
     color: #ffffff;
-    padding: 15px 30px;
+    padding: 12px 24px;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 18px;
 }
 
-.struggles, .success-stories {
-    padding: 50px;
+.struggles, .goals {
+    padding: 40px 20px;
+}
+
+.struggles h2, .goals h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box {
+    background-color: #f3f6f9;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    width: calc(50% - 40px);
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.success-story {
-    margin-bottom: 30px;
-}
-
-.success-story h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.success-story p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
+.services, .success-stories, .testimonials, .contact {
+    padding: 40px 20px;
 }
 
 footer {
     background-color: #6d8ca6;
+    color: #ffffff;
     padding: 20px;
     text-align: center;
-    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .box {
+        width: calc(33.333% - 40px);
+    }
 }
