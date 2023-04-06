@@ -5,12 +5,14 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f3f6f9;
+    line-height: 1.5;
+    color: #333;
 }
 
 header {
-    background-color: #6d8ca6;
+    background-color: #e04f7e;
     padding: 20px;
 }
 
@@ -51,11 +53,17 @@ nav a {
 
 .cta {
     display: inline-block;
-    background-color: #6d8ca6;
+    background-color: #e04f7e;
     color: #ffffff;
     padding: 12px 24px;
     text-decoration: none;
     font-size: 18px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #c9476f;
 }
 
 .struggles, .goals {
@@ -65,6 +73,7 @@ nav a {
 .struggles h2, .goals h2 {
     font-size: 32px;
     margin-bottom: 20px;
+    color: #e04f7e;
 }
 
 .box-container {
@@ -81,6 +90,12 @@ nav a {
     width: calc(50% - 40px);
     margin-bottom: 20px;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    background-color: #f3f3f3;
+    transform: translateY(-5px);
 }
 
 .services, .success-stories, .testimonials, .contact {
@@ -88,7 +103,7 @@ nav a {
 }
 
 footer {
-    background-color: #6d8ca6;
+    background-color: #e04f7e;
     color: #ffffff;
     padding: 20px;
     text-align: center;
