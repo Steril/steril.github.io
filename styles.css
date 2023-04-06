@@ -5,14 +5,14 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f3f6f9;
     line-height: 1.5;
     color: #333;
 }
 
 header {
-    background-color: #e04f7e;
+    background: linear-gradient(to right, #e04f7e, #c9476f);
     padding: 20px;
 }
 
@@ -25,6 +25,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #ffffff;
+    font-weight: 500;
 }
 
 .hero {
@@ -53,7 +54,7 @@ nav a {
 
 .cta {
     display: inline-block;
-    background-color: #e04f7e;
+    background: linear-gradient(to right, #e04f7e, #c9476f);
     color: #ffffff;
     padding: 12px 24px;
     text-decoration: none;
@@ -63,7 +64,7 @@ nav a {
 }
 
 .cta:hover {
-    background-color: #c9476f;
+    background: linear-gradient(to right, #c9476f, #e04f7e);
 }
 
 .struggles, .goals {
@@ -80,21 +81,23 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 40px;
 }
 
 .box {
-    background-color: #f3f6f9;
+    background-color: #ffffff;
     padding: 20px;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
     width: calc(50% - 40px);
     margin-bottom: 20px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 .box:hover {
-    background-color: #f3f3f3;
+    background-color: #f8f8f8;
     transform: translateY(-5px);
 }
 
@@ -103,11 +106,12 @@ nav a {
 }
 
 footer {
-    background-color: #e04f7e;
+    background: linear-gradient(to right, #e04f7e, #c9476f);
     color: #ffffff;
     padding: 20px;
     text-align: center;
 }
+
 
 @media (min-width: 768px) {
     .box {
