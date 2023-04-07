@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #e04f7e, #c9476f);
+    background: linear-gradient(to right, #e04f7e, #f786aa);
     padding: 20px;
 }
 
@@ -25,7 +25,19 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #ffffff;
-    font-weight: 500;
+}
+
+nav .cta {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #e04f7e;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+nav .cta:hover {
+    background-color: #e04f7e;
+    color: #ffffff;
 }
 
 .hero {
@@ -52,21 +64,6 @@ nav a {
     margin-bottom: 40px;
 }
 
-.cta {
-    display: inline-block;
-    background: linear-gradient(to right, #e04f7e, #c9476f);
-    color: #ffffff;
-    padding: 12px 24px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-}
-
-.cta:hover {
-    background: linear-gradient(to right, #c9476f, #e04f7e);
-}
-
 .struggles, .goals {
     padding: 40px 20px;
 }
@@ -79,42 +76,61 @@ nav a {
 
 .box-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 40px;
 }
 
 .box {
     background-color: #ffffff;
     padding: 20px;
-    border: 1px solid #e0e0e0;
     border-radius: 4px;
-    width: calc(50% - 40px);
-    margin-bottom: 20px;
-    text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 40px);
+}
+
+.box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.struggles .cta, .goals .cta {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #e04f7e;
+    color: #ffffff;
+    border-radius: 50px;
+    width: fit-content;
     transition: all 0.3s ease;
 }
 
-.box:hover {
-    background-color: #f8f8f8;
-    transform: translateY(-5px);
+.struggles .cta:hover, .goals .cta:hover {
+    background-color: #f786aa;
 }
 
-.services, .success-stories, .testimonials, .contact {
+.testimonials {
     padding: 40px 20px;
 }
 
-footer {
-    background: linear-gradient(to right, #e04f7e, #c9476f);
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
+.testimonial {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
 
-@media (min-width: 768px) {
-    .box {
-        width: calc(33.333% - 40px);
-    }
+.testimonial p {
+    font-size: 16px;
 }
