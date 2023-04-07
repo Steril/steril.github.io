@@ -74,9 +74,11 @@ nav .cta:hover {
     color: #e04f7e;
 }
 
+/* ... */
 .box-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     margin-bottom: 40px;
 }
 
@@ -85,8 +87,10 @@ nav .cta:hover {
     padding: 20px;
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: calc(50% - 40px);
+    text-align: center;
 }
+/* ... */
+
 
 .box h3 {
     font-size: 24px;
