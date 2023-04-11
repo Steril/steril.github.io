@@ -1,25 +1,26 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f3f6f9;
-    line-height: 1.5;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
 }
 
-header {
-    background: linear-gradient(to right, #e04f7e, #f786aa);
-    padding: 20px;
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #343a40;
+    padding: 1rem;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1rem;
 }
 
 nav a {
@@ -28,61 +29,52 @@ nav a {
 }
 
 nav .cta {
-    padding: 10px 20px;
-    background-color: #ffffff;
-    color: #e04f7e;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-}
-
-nav .cta:hover {
-    background-color: #e04f7e;
-    color: #ffffff;
+    background-color: #007bff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
 
 .hero {
+    text-align: center;
+    padding: 3rem 1rem;
     background-image: url('https://visitncsmokies.com/wp-content/uploads/2018/09/HERO-PLACEHOLDER.jpg');
     background-size: cover;
     background-position: center;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: #ffffff;
-    text-align: center;
-    padding: 0 20px;
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 24px;
-    margin-bottom: 40px;
+    font-size: 1.2rem;
 }
 
-.struggles, .goals {
-    padding: 40px 20px;
+.cta {
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
 }
 
-.struggles h2, .goals h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #e04f7e;
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-/* ... */
 .box-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 40px;
 }
 
-/* ... */
 .box {
     background-color: #ffffff;
     padding: 20px;
@@ -90,6 +82,8 @@ nav .cta:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-weight: bold;
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -97,53 +91,12 @@ nav .cta:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
-/* ... */
-
-
 
 .box h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .box p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.struggles .cta, .goals .cta {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding: 10px 20px;
-    background-color: #e04f7e;
-    color: #ffffff;
-    border-radius: 50px;
-    width: fit-content;
-    transition: all 0.3s ease;
-}
-
-.struggles .cta:hover, .goals .cta:hover {
-    background-color: #f786aa;
-}
-
-.testimonials {
-    padding: 40px 20px;
-}
-
-.testimonial {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.testimonial img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.testimonial p {
-    font-size: 16px;
+    font-weight: normal;
 }
